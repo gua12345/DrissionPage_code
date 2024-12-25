@@ -1,6 +1,6 @@
-import os
 from DrissionPage import ChromiumPage, ChromiumOptions
-
+import os
+import time
 
 def set_driver(headless=False, browser_path=None):
     # 常见的Linux Chrome/Chromium浏览器路径
