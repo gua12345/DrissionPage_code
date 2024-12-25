@@ -39,9 +39,9 @@ def set_driver(headless=False, browser_path=None):
     co.set_user_agent(
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.92 Safari/537.36')
     co.new_env()
-    plugin_path = r"cf/turnstilePatch"  # 插件文件夹路径
+    plugin_path = r"turnstilePatch"  # 插件文件夹路径
     co.add_extension(f"{plugin_path}")
-    co.add_extension(r"zhiwen")
+    co.add_extension(r"my-fingerprint-chrome-v2.2.3")
     driver = ChromiumPage(co)
     return driver
 
