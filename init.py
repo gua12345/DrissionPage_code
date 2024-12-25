@@ -88,7 +88,3 @@ def deletecookie(driver):
         error_msg = f"清除cookie时发生错误: {str(e)}"
         print(error_msg)
         return False
-
-driver = set_driver()
-deletecookie(driver)
-driver.get('https://nc.me')
